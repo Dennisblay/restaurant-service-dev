@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --background: 217 36% 98%;
+        --foreground: 217 75% 1%;
+        --muted: 187 31% 87%;
+        --muted-foreground: 187 0% 40%;
+        --popover: 217 36% 98%;
+        --popover-foreground: 217 75% 1%;
+        --card: 217 36% 98%;
+        --card-foreground: 217 75% 1%;
+        --border: 217 8% 93%;
+        --input: 217 8% 93%;
+        --primary: 217 100% 58%;
+        --primary-foreground: 0 0% 100%;
+        --secondary: 187 100% 53.07%;
+        --secondary-foreground: 0 0% 0%;
+        --accent: 247 100% 58%;
+        --accent-foreground: 247 100% 98%;
+        --destructive: 3.03 97.06% 40%;
+        --destructive-foreground: 12 0% 100%;
+        --ring: 217 100% 58%;
+        --radius: 0.5rem;
+    }
+
+    .dark {
+        --background: 217 42% 0%;
+        --foreground: 217 30% 99%;
+        --muted: 187 31% 13%;
+        --muted-foreground: 187 0% 60%;
+        --popover: 217 42% 0%;
+        --popover-foreground: 217 30% 99%;
+        --card: 217 42% 0%;
+        --card-foreground: 217 30% 99%;
+        --border: 217 8% 11%;
+        --input: 217 8% 11%;
+        --primary: 217 100% 58%;
+        --primary-foreground: 0 0% 100%;
+        --secondary: 187 100% 58%;
+        --secondary-foreground: 0 0% 0%;
+        --accent: 247 100% 58%;
+        --accent-foreground: 247 100% 98%;
+        --destructive: 12 93% 49%;
+        --destructive-foreground: 0 0% 100%;
+        --ring: 217 100% 58%;
+    }
+}
+
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+
+    body {
+        @apply bg-background text-foreground;
+        @apply font-quicksand font-semibold ;
+    }
+
+    p {
+        @apply font-bai;
+    }
+}
